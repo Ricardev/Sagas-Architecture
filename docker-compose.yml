@@ -1,0 +1,14 @@
+﻿version: '3.3'
+services:
+  eurekaserver:
+    image: steeltoeoss/eureka-server:latest
+    command: docker run --publish 8761:8761 steeltoeoss/eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - private
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://localhost:8761/eureka/
+  
+networks:
+  private:

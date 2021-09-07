@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>EurekaService project</Description>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SteeltoeVersion>3.1.0</SteeltoeVersion>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <UserSecretsId>Eureka-Service-7b12f9e7-3fa4-4446-a626-ebe2fe70b148</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Steeltoe.Discovery.Eureka" Version="$(SteeltoeVersion)" />
+  </ItemGroup>
+
+</Project>
